@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de chave ssh</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+ <h1>Criação de chave ssh no Windows e inclusão no Github</h1>
+ <p class="date">01/05/2001</p>
+
+<h2>Passos:</h2>
+<ol>
+    <li>ssh-keygen -t ed25519 -C "your_email@example.com"</li>
+    <li>Copnfigure passphas</li>
+    <li>start ssh-agent</li>
+    <li>eval  `ssh-agent -s` </li>
+    <li>ssh-add ~/.ssh/id_ed25519</li>
+    <li>clip < ~/.ssh/id_ed25519.pub</li>
+    <li>Paste key into Github's Key field</li>
+    
+</ol>
+<button type="button"><a href="index.html">Voltar</a></button>
+    
+</body>
+</html>
